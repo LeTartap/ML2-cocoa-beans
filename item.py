@@ -14,5 +14,5 @@ class Item:
         if self.y < 0 or self.y + self.height >self.WINDOW.get_height():
             self.direction = -self.direction
     def draw(self):
-        pygame.draw.rect(self.WINDOW, self.color, (self.x, self.y, self.width, self.height), 1)
+        pygame.draw.rect(self.WINDOW, self.color, (self.x, self.y, self.width, self.height))
     

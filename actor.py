@@ -10,8 +10,15 @@ class Actor:
         self.direction = 1
         self.color = (0, 0, 0)
         self.WINDOW = WINDOW
+        self.holding = []
+        self.grabbing = False
     def movement(self):
         keys = pygame.key.get_pressed()
+        if keys[pygame.K_SPACE]:
+            self.grabbing = True
+        else:
+            self.grabbing = False
+            self.holding = []
         if keys[pygame.K_LEFT] and self.x - self.speed >= 0:
             self.x -= self.speed
         if keys[pygame.K_RIGHT] and self.x + self.width + self.speed <= self.WINDOW.get_width():
