@@ -1,6 +1,9 @@
 import pygame, sys, random
 import gym
 from pygame.locals import *
+from actor import Actor
+
+
 pygame.init()
  
 # Colours
@@ -17,7 +20,39 @@ WINDOW_HEIGHT = 300
 
 WINDOW = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption('My Game!')
- 
+
+
+class item:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.width = 20
+        self.height = 20
+        self.speed = 4
+        self.direction = 1
+        self.color = (255, 0, 0)
+    def move(self):
+        self.y += self.speed * self.direction
+        if self.y < 0 or self.y + self.height > WINDOW_HEIGHT:
+            self.direction = -self.direction
+    def draw(self):
+        pygame.draw.rect(WINDOW, self.color, (self.x, self.y, self.width, self.height), 1)
+    def check_collision(self, dot_pos):
+        distance = ((dot_pos[0] - self.x)**2 + (dot_pos[1] - self.y)**2)**0.5
+        if distance < 10:
+            return True
+        return False
+    
+item1 = item(150,150)
+actor1 = Actor(0,0)
+
+#check collision
+def check_collision(rect_pos, dot_pos):
+    distance = ((dot_pos[0] - rect_pos[0])**2 + (dot_pos[1] - rect_pos[1])**2)**0.5
+    if distance < 10:
+        return True
+    return
+
 dot_pos = [WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2]
 rect_pos = [0, 0]
 rec_speed = [0, 1]
@@ -35,40 +70,27 @@ def main () :
       if event.type == QUIT :
         pygame.quit()
         sys.exit()
+
+    #draw the item
+    item1.move()
+    actor1.movement()
     
-    # Processing
-    # This section will be built out later
-    dot_pos[0] += dot_speed[0]
-    dot_pos[1] += dot_speed[1]
     
-    rect_pos[1] += rec_speed[1]
+    if item1.check_collision(dot_pos):
+        print("Collision")
+
     
 
-    # Bounce the rectangle off the edges
-    
-    if rect_pos[1] < 0 or rect_pos[1] + 20 > WINDOW_HEIGHT:
-        rec_speed[1] = -rec_speed[1]
-
-    # Bounce the dot off the edges
-    if dot_pos[0] - dot_radius < 0 or dot_pos[0] + dot_radius > WINDOW_WIDTH:
-        dot_speed[0] = -dot_speed[0]
-    if dot_pos[1] - dot_radius < 0 or dot_pos[1] + dot_radius > WINDOW_HEIGHT:
-        dot_speed[1] = -dot_speed[1]
- 
+      
+      
+      
     # Render elements of the game
     WINDOW.fill(BACKGROUND)
-    pygame.draw.circle(WINDOW, DOT_COLOR, dot_pos, dot_radius)
-    pygame.draw.rect(WINDOW, (255, 0, 0), (rect_pos[0]+50, rect_pos[1], 20, 20), 1)
-    pygame.draw.rect(WINDOW, (255, 0, 0), (rect_pos[0], rect_pos[1], 20, 20), 1)
-    pygame.draw.rect(WINDOW, (255, 0, 0), (rect_pos[0]+150, rect_pos[1], 20, 20), 1)
-    distance = ((dot_pos[0] - rect_pos[0])**2 + (dot_pos[1] - rect_pos[1])**2)**0.5
-    #display distance in the corner
-    font = pygame.font.Font(None, 36)
-    text = font.render(str(int(distance)), 1, (10, 10, 10))
-    textpos = text.get_rect()
-    textpos.centerx = WINDOW.get_rect().centerx
-    WINDOW.blit(text, textpos)
-    #display distance in the corner
+    item1.draw()
+    actor1.draw(WINDOW)
+    
+   
+  
     
     pygame.display.update()
     fpsClock.tick(FPS)
