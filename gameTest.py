@@ -2,8 +2,8 @@ import pygame, sys, random
 import gym
 from pygame.locals import *
 from actor import Actor
-
-
+from item import Item
+from package import Package
 pygame.init()
  
 # Colours
@@ -19,39 +19,37 @@ WINDOW_HEIGHT = 300
 
 
 WINDOW = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+#get the hegiht and width of the window
 pygame.display.set_caption('My Game!')
 
 
-class item:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-        self.width = 20
-        self.height = 20
-        self.speed = 4
-        self.direction = 1
-        self.color = (255, 0, 0)
-    def move(self):
-        self.y += self.speed * self.direction
-        if self.y < 0 or self.y + self.height > WINDOW_HEIGHT:
-            self.direction = -self.direction
-    def draw(self):
-        pygame.draw.rect(WINDOW, self.color, (self.x, self.y, self.width, self.height), 1)
-    def check_collision(self, dot_pos):
-        distance = ((dot_pos[0] - self.x)**2 + (dot_pos[1] - self.y)**2)**0.5
-        if distance < 10:
-            return True
-        return False
-    
-item1 = item(150,150)
-actor1 = Actor(0,0)
 
+    
+item1 = Item(WINDOW,150,150)
+actor1 = Actor(WINDOW,0,0)
+pkg1 = Package(WINDOW,200,200)
 #check collision
-def check_collision(rect_pos, dot_pos):
-    distance = ((dot_pos[0] - rect_pos[0])**2 + (dot_pos[1] - rect_pos[1])**2)**0.5
-    if distance < 10:
+def check_collision(obj1,obj2):
+    distance = ((obj1.x - obj2.x)**2 + (obj1.y - obj2.y)**2)**0.5
+
+
+    font = pygame.font.Font(None, 36)
+    if distance < 100:
+        text = font.render(str(distance), 1, (255, 0, 0))
+    else:
+       text = font.render(str(distance), 1, (10,10,10))
+    WINDOW.blit(text, (obj1.x, obj1.y))
+
+    
+    if distance < 10: 
+        print("Collision")
         return True
-    return
+    return False
+    
+    
+
+    
+
 
 dot_pos = [WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2]
 rect_pos = [0, 0]
@@ -74,21 +72,15 @@ def main () :
     #draw the item
     item1.move()
     actor1.movement()
-    
-    
-    if item1.check_collision(dot_pos):
-        print("Collision")
-
+    pkg1.getPicked(actor1)
     
 
-      
-      
-      
     # Render elements of the game
     WINDOW.fill(BACKGROUND)
+    check_collision(actor1,item1)
     item1.draw()
-    actor1.draw(WINDOW)
-    
+    actor1.draw()
+    pkg1.draw()
    
   
     

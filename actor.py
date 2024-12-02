@@ -1,7 +1,7 @@
 import pygame
 
 class Actor:
-    def __init__(self, x, y):
+    def __init__(self,WINDOW, x, y):
         self.x = x
         self.y = y
         self.width = 20
@@ -9,23 +9,19 @@ class Actor:
         self.speed = 1
         self.direction = 1
         self.color = (0, 0, 0)
-
+        self.WINDOW = WINDOW
     def movement(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_LEFT]:
+        if keys[pygame.K_LEFT] and self.x - self.speed >= 0:
             self.x -= self.speed
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_RIGHT] and self.x + self.width + self.speed <= self.WINDOW.get_width():
             self.x += self.speed
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] and self.y - self.speed >= 0:
             self.y -= self.speed
-        if keys[pygame.K_DOWN]:
+        if keys[pygame.K_DOWN] and self.y + self.height + self.speed <= self.WINDOW.get_height():
             self.y += self.speed
 
-    def draw(self, window):
-        pygame.draw.ellipse(window, self.color, (self.x, self.y, self.width, self.height))
+    def draw(self):
+        pygame.draw.ellipse(self.WINDOW, self.color, (self.x, self.y, self.width, self.height))
 
-    def check_collision(self, dot_pos):
-        distance = ((dot_pos[0] - self.x)**2 + (dot_pos[1] - self.y)**2)**0.5
-        if distance < 10:
-            return True
-        return False
+    
