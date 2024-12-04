@@ -9,6 +9,8 @@ class Item:
         self.direction = 1
         self.color = (255, 0, 0)
         self.WINDOW = WINDOW
+    
+    # TODO x movement
     def move(self):
         self.y += self.speed * self.direction
         if self.y < 0 or self.y + self.height >self.WINDOW.get_height():

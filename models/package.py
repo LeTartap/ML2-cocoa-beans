@@ -18,12 +18,14 @@ class Package:
                 self.x = actor.x
                 self.y = actor.y
                 actor.holding.append(self.id)
+                
         elif self.id in actor.holding:
             self.x = actor.x
             self.y = actor.y
+    def deliver(self,actor):
+        actor.holding.remove(self.id)
+        actor.points += 1
             
-            
-        
             
     def draw(self):
         pygame.draw.rect(self.WINDOW, self.color, (self.x, self.y, self.width, self.height))

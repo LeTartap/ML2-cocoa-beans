@@ -12,6 +12,7 @@ class Actor:
         self.WINDOW = WINDOW
         self.holding = []
         self.grabbing = False
+        self.points = 0
     def movement(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_SPACE]:
