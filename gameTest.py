@@ -7,7 +7,7 @@ from models.item import Item
 from models.package import Package
 from models.zone import Zone
 from models.environment import Environment
-from utils.utils import check_collision
+
 
 # -------------------------------------------------------------------------------- #
 # Pygame setup
@@ -55,6 +55,7 @@ def main():
         ENVIRONMENT.moveActors()
         ENVIRONMENT.movePackages()
         ENVIRONMENT.checkDeliveries()
+        ENVIRONMENT.checkCollisions()
  
         # Render elements of the game
         WINDOW.fill(BACKGROUND)
@@ -67,10 +68,6 @@ def main():
             actor.draw()
         for package in ENVIRONMENT.packages:
             package.draw()
-
-
-
-        # check_collision(actor1, item1)
 
         legend_lines = []
         for idx, actor in enumerate(ENVIRONMENT.actors):
