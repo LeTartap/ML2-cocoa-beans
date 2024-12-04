@@ -23,6 +23,7 @@ fpsClock = pygame.time.Clock()
 WINDOW_WIDTH = 400
 WINDOW_HEIGHT = 300
 
+# TODO clean up WINDOW usage
 # get the height and width of the window
 WINDOW = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
@@ -50,6 +51,10 @@ def main():
             if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
+
+        # 10% chance of spawning a new package
+        if random.random() < 0.002:  
+            ENVIRONMENT.spawnPackage()
 
         ENVIRONMENT.moveItems()
         ENVIRONMENT.moveActors()

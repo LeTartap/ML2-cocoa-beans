@@ -1,7 +1,10 @@
 import pygame
-import sys
-sys.path.append('../')
-from utils.utils import check_collision
+import sys, random
+
+sys.path.append("../")
+from utils.utils import getDistance
+from models.package import Package
+
 
 class Environment:
     def __init__(self, WINDOW, actors, packages, items, zones):
@@ -38,9 +41,32 @@ class Environment:
                         package.deliver(actor)
                         self.packages.remove(package)
                         del package
+
     def checkCollisions(self):
         # TODO collions for other objects
         for actor in self.actors:
-            for item in self.items: 
-                if check_collision(actor, item):
-                    actor.points -= 1 
+            for item in self.items:
+                if getDistance(actor, item) < 10:
+                    actor.points -= 1
+
+    def spawnPackage(self):
+        # Sapwn between 3 and 8 packages 
+        for _ in range(random.randint(3, 8)):
+            spawned = False
+            while not spawned:
+                x = random.randint(0, self.WINDOW.get_width())
+                y = random.randint(0, self.WINDOW.get_height())
+
+                package = Package(self.WINDOW, x, y)
+
+                for zone in self.zones:
+                    if (
+                        getDistance(
+                            zone,
+                            package
+                        )
+                        > 50
+                    ):
+                        spawned = True
+                        self.packages.append(package)
+
