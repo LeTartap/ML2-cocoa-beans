@@ -27,10 +27,17 @@ class Environment:
         for actor in self.actors:
             actor.movement()
 
-    def movePackages(self):
+    def checkPackages(self):
         for package in self.packages:
+            package.update()
+
             for actor in self.actors:
-                package.getPicked(actor)
+                if package.time_until_delivery <= -1:  
+                    self.packages.remove(package)
+                    if package.id in actor.holding:
+                        actor.holding.remove(package.id)
+                else:
+                    package.getPicked(actor)
 
     def checkDeliveries(self):
         for actor in self.actors:

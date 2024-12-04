@@ -10,7 +10,10 @@ class Package:
         self.speed = 4
         self.direction = 1
         self.color = (0, 255, 255)
+        self.time_until_delivery = 5000
         self.WINDOW = WINDOW
+    def update(self):
+        self.time_until_delivery -= 1
     def getPicked(self,actor):
         if actor.grabbing and len(actor.holding) == 0:
             distance = ((actor.x - self.x)**2 + (actor.y - self.y)**2)**0.5

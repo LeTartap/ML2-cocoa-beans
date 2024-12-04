@@ -18,10 +18,10 @@ BACKGROUND = (255, 255, 255)
 DOT_COLOR = (0, 0, 255)
 
 # Game Setup
-FPS = 120
+FPS = 120000
 fpsClock = pygame.time.Clock()
-WINDOW_WIDTH = 400
-WINDOW_HEIGHT = 300
+WINDOW_WIDTH = 300
+WINDOW_HEIGHT = 200
 
 # TODO clean up WINDOW usage
 # get the height and width of the window
@@ -32,8 +32,8 @@ pygame.display.set_caption("ML2 - testing environment")
 
 # -------------------------------------------------------------------------------- #
 # Game Objects
-packages = [Package(WINDOW, 100, 100),Package(WINDOW, 200, 200)]
-actors = [Actor(WINDOW, 0, 0)]
+packages = [Package(WINDOW, 100, 100),Package(WINDOW, 150, 100)]
+actors = [Actor(WINDOW, 50, 50)]
 items = [Item(WINDOW, 150, 150)]
 zones = [Zone(WINDOW, WINDOW_WIDTH - 40, 0, 100, WINDOW_HEIGHT, True)]
 
@@ -58,7 +58,7 @@ def main():
 
         ENVIRONMENT.moveItems()
         ENVIRONMENT.moveActors()
-        ENVIRONMENT.movePackages()
+        ENVIRONMENT.checkPackages()
         ENVIRONMENT.checkDeliveries()
         ENVIRONMENT.checkCollisions()
  
