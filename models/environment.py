@@ -50,23 +50,31 @@ class Environment:
                     actor.points -= 1
 
     def spawnPackage(self):
-        # Sapwn between 3 and 8 packages 
-        for _ in range(random.randint(3, 8)):
+        valid_centroid = False
+
+        while valid_centroid == False:
+            central_x = random.randint(50, self.WINDOW.get_width() - 50)  
+            central_y = random.randint(50, self.WINDOW.get_height() - 50)
+            
+            package = Package(self.WINDOW, central_x, central_y)
+            for zone in self.zones:
+                if getDistance(zone, package) > 100:
+                   valid_centroid = True
+                                    
+
+        
+
+        for _ in range(random.randint(1, 5)):
             spawned = False
             while not spawned:
-                x = random.randint(0, self.WINDOW.get_width())
-                y = random.randint(0, self.WINDOW.get_height())
+                x = random.randint(max(0, central_x - 20), min(self.WINDOW.get_width(), central_x + 20))
+                y = random.randint(max(0, central_y - 20), min(self.WINDOW.get_height(), central_y + 20))
 
                 package = Package(self.WINDOW, x, y)
 
+                # Check if the package is far enough from delivery zones
                 for zone in self.zones:
-                    if (
-                        getDistance(
-                            zone,
-                            package
-                        )
-                        > 50
-                    ):
+                    if getDistance(zone, package) > 50:
                         spawned = True
                         self.packages.append(package)
 

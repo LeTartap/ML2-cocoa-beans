@@ -52,8 +52,8 @@ def main():
                 pygame.quit()
                 sys.exit()
 
-        # 10% chance of spawning a new package
-        if random.random() < 0.002:  
+        # 0.15% chance of spawning a new package cluster every tick
+        if random.random() < 0.0015:  
             ENVIRONMENT.spawnPackage()
 
         ENVIRONMENT.moveItems()
