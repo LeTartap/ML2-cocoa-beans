@@ -1,0 +1,10 @@
+path: cocoa_diseases # dataset root dir
+train: images/train # train images (relative to 'path') 128 images
+val: images/val # val images (relative to 'path') 128 images
+test: 
+
+
+names:
+  0: "phytophthora"
+  1: "monilia"
+  2: "healthy"
