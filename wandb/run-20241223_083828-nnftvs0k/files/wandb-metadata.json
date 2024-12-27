@@ -1,0 +1,82 @@
+{
+  "os":  "Linux-5.15.0-127-generic-x86_64-with-glibc2.29",
+  "python":  "CPython 3.8.10",
+  "startedAt":  "2024-12-23T07:38:28.253913Z",
+  "program":  "ML2/cocoa_pipeline_Razvan.ipynb",
+  "git":  {
+    "remote":  "https://github.com/ADylewski/ML2.git",
+    "commit":  "b3f93ec2f13c35d54b059dab9adea228d82552ce"
+  },
+  "email":  "razvan.stanciu98@gmail.com",
+  "root":  "/home/jovyan/ML2",
+  "host":  "6b34dccef22a",
+  "executable":  "/usr/bin/python",
+  "cpu_count":  72,
+  "cpu_count_logical":  144,
+  "gpu":  "NVIDIA A16",
+  "gpu_count":  8,
+  "disk":  {
+    "/":  {
+      "total":  "2360979238912",
+      "used":  "382880759808"
+    }
+  },
+  "memory":  {
+    "total":  "269851799552"
+  },
+  "cpu":  {
+    "count":  72,
+    "countLogical":  144
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A16",
+      "memoryTotal":  "16101933056",
+      "cudaCores":  1280,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.5"
+}

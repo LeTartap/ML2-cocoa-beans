@@ -1,0 +1,19 @@
+{"time":"2024-12-23T08:38:28.261499513+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T08:38:28.261532895+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20241223_083828-nnftvs0k/logs/debug-core.log"}
+{"time":"2024-12-23T08:38:28.38908352+01:00","level":"INFO","msg":"created new stream","id":"nnftvs0k"}
+{"time":"2024-12-23T08:38:28.389148418+01:00","level":"INFO","msg":"stream: started","id":"nnftvs0k"}
+{"time":"2024-12-23T08:38:28.389194939+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:38:28.389209902+01:00","level":"INFO","msg":"sender: started","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:38:28.389344945+01:00","level":"INFO","msg":"handler: started","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:38:28.664959759+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T08:40:51.595612765+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T08:40:52.942539041+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T08:40:52.946531108+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-23T08:40:52.947650357+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-23T08:40:53.949346413+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.485137914,"progress":"459B/459B"}],"total_operations":1}}
+{"time":"2024-12-23T08:40:54.098609995+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-23T08:40:55.389792463+01:00","level":"INFO","msg":"stream: closing","id":"nnftvs0k"}
+{"time":"2024-12-23T08:40:55.389828395+01:00","level":"INFO","msg":"handler: closed","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:40:55.389861352+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:40:55.390003299+01:00","level":"INFO","msg":"sender: closed","stream_id":"nnftvs0k"}
+{"time":"2024-12-23T08:40:55.390675813+01:00","level":"INFO","msg":"stream: closed","id":"nnftvs0k"}

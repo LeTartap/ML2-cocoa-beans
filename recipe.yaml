@@ -1,0 +1,133 @@
+# General Hyperparams
+num_epochs: 90
+init_lr: 0.01
+final_lr: 0.0002
+weights_warmup_lr: 0
+biases_warmup_lr: 0.1
+
+# Pruning Hyperparams
+init_sparsity: 0.05
+pruning_start_epoch: 4
+pruning_end_epoch: 50
+pruning_update_frequency: 1.0
+
+# Modifiers
+training_modifiers:
+  !EpochRangeModifier
+    start_epoch: 0
+    end_epoch: eval(num_epochs)
+
+  !LearningRateFunctionModifier
+    start_epoch: 3
+    end_epoch: eval(num_epochs)
+    lr_func: linear
+    init_lr: eval(init_lr)
+    final_lr: eval(final_lr)
+
+  !LearningRateFunctionModifier
+    start_epoch: 0
+    end_epoch: 3
+    lr_func: linear
+    init_lr: eval(weights_warmup_lr)
+    final_lr: eval(init_lr)
+    param_groups: [0, 1]
+
+  !LearningRateFunctionModifier
+    start_epoch: 0
+    end_epoch: 3
+    lr_func: linear
+    init_lr: eval(biases_warmup_lr)
+    final_lr: eval(init_lr)
+    param_groups: [2]
+
+pruning_modifiers:
+  !GMPruningModifier
+    init_sparsity: eval(init_sparsity)
+    final_sparsity: 0.8
+    params:
+        model.model.0.conv.weight
+        model.model.1.conv.weight
+        model.model.2.cv1.conv.weight
+        model.model.2.cv2.conv.weight
+        model.model.2.m.0.cv1.conv.weight
+        model.model.2.m.0.cv2.conv.weight
+        model.model.3.conv.weight
+        model.model.4.cv1.conv.weight
+        model.model.4.cv2.conv.weight
+        model.model.4.m.0.cv1.conv.weight
+        model.model.4.m.0.cv2.conv.weight
+        model.model.5.conv.weight
+        model.model.6.cv1.conv.weight
+        model.model.6.cv2.conv.weight
+        model.model.6.m.0.cv1.conv.weight
+        model.model.6.m.0.cv2.conv.weight
+        model.model.6.m.0.cv3.conv.weight
+        model.model.6.m.0.m.0.cv1.conv.weight
+        model.model.6.m.0.m.0.cv2.conv.weight
+        model.model.6.m.0.m.1.cv1.conv.weight
+        model.model.6.m.0.m.1.cv2.conv.weight
+        model.model.7.conv.weight
+        model.model.8.cv1.conv.weight
+        model.model.8.cv2.conv.weight
+        model.model.8.m.0.cv1.conv.weight
+        model.model.8.m.0.cv2.conv.weight
+        model.model.8.m.0.cv3.conv.weight
+        model.model.8.m.0.m.0.cv1.conv.weight
+        model.model.8.m.0.m.0.cv2.conv.weight
+        model.model.8.m.0.m.1.cv1.conv.weight
+        model.model.8.m.0.m.1.cv2.conv.weight
+        model.model.9.cv1.conv.weight
+        model.model.9.cv2.conv.weight
+        model.model.10.cv1.conv.weight
+        model.model.10.cv2.conv.weight
+        model.model.10.m.0.attn.qkv.conv.weight
+        model.model.10.m.0.attn.proj.conv.weight
+        model.model.10.m.0.attn.pe.conv.weight
+        model.model.10.m.0.ffn.0.conv.weight
+        model.model.10.m.0.ffn.1.conv.weight
+        model.model.13.cv1.conv.weight
+        model.model.13.cv2.conv.weight
+        model.model.13.m.0.cv1.conv.weight
+        model.model.13.m.0.cv2.conv.weight
+        model.model.16.cv1.conv.weight
+        model.model.16.cv2.conv.weight
+        model.model.16.m.0.cv1.conv.weight
+        model.model.16.m.0.cv2.conv.weight
+        model.model.17.conv.weight
+        model.model.19.cv1.conv.weight
+        model.model.19.cv2.conv.weight
+        model.model.19.m.0.cv1.conv.weight
+        model.model.19.m.0.cv2.conv.weight
+        model.model.20.conv.weight
+        model.model.22.cv1.conv.weight
+        model.model.22.cv2.conv.weight
+        model.model.22.m.0.cv1.conv.weight
+        model.model.22.m.0.cv2.conv.weight
+        model.model.22.m.0.cv3.conv.weight
+        model.model.22.m.0.m.0.cv1.conv.weight
+        model.model.22.m.0.m.0.cv2.conv.weight
+        model.model.22.m.0.m.1.cv1.conv.weight
+        model.model.22.m.0.m.1.cv2.conv.weight
+        model.model.23.cv2.0.0.conv.weight
+        model.model.23.cv2.0.1.conv.weight
+        model.model.23.cv2.1.0.conv.weight
+        model.model.23.cv2.1.1.conv.weight
+        model.model.23.cv2.2.0.conv.weight
+        model.model.23.cv2.2.1.conv.weight
+        model.model.23.cv3.0.0.0.conv.weight
+        model.model.23.cv3.0.0.1.conv.weight
+        model.model.23.cv3.0.1.0.conv.weight
+        model.model.23.cv3.0.1.1.conv.weight
+        model.model.23.cv3.1.0.0.conv.weight
+        model.model.23.cv3.1.0.1.conv.weight
+        model.model.23.cv3.1.1.0.conv.weight
+        model.model.23.cv3.1.1.1.conv.weight
+        model.model.23.cv3.2.0.0.conv.weight
+        model.model.23.cv3.2.0.1.conv.weight
+        model.model.23.cv3.2.1.0.conv.weight
+        model.model.23.cv3.2.1.1.conv.weight
+    inter_func: cubic
+    global_sparsity: false
+    start_epoch: eval(pruning_start_epoch)
+    end_epoch: eval(pruning_end_epoch)
+    update_frequency: 1

@@ -1,0 +1,9 @@
+{"time":"2024-12-22T13:14:29.984360613+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-22T13:14:29.984394164+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20241222_131429-enk507vu/logs/debug-core.log"}
+{"time":"2024-12-22T13:14:30.733740423+01:00","level":"INFO","msg":"created new stream","id":"enk507vu"}
+{"time":"2024-12-22T13:14:30.733772077+01:00","level":"INFO","msg":"stream: started","id":"enk507vu"}
+{"time":"2024-12-22T13:14:30.733822398+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"enk507vu"}
+{"time":"2024-12-22T13:14:30.733858006+01:00","level":"INFO","msg":"sender: started","stream_id":"enk507vu"}
+{"time":"2024-12-22T13:14:30.733923712+01:00","level":"INFO","msg":"handler: started","stream_id":"enk507vu"}
+{"time":"2024-12-22T13:14:31.121461849+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-22T13:17:13.963438673+01:00","level":"INFO","msg":"Pausing system monitor"}
