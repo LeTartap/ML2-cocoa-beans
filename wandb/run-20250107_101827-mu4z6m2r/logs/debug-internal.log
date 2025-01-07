@@ -1,0 +1,17 @@
+{"time":"2025-01-07T10:18:27.972499013+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T10:18:27.972525231+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250107_101827-mu4z6m2r/logs/debug-core.log"}
+{"time":"2025-01-07T10:18:28.195559837+01:00","level":"INFO","msg":"created new stream","id":"mu4z6m2r"}
+{"time":"2025-01-07T10:18:28.195594957+01:00","level":"INFO","msg":"stream: started","id":"mu4z6m2r"}
+{"time":"2025-01-07T10:18:28.19577005+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:18:28.195886664+01:00","level":"INFO","msg":"handler: started","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:18:28.195949869+01:00","level":"INFO","msg":"sender: started","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:18:28.615003946+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-07T10:19:53.355551024+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-07T10:19:53.357095941+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-07T10:19:54.356399133+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_mu4z6m2r_model","runtime_seconds":1.965307103,"subtasks":[{"desc":"best.pt","runtime_seconds":1.3741212250000001,"progress":"13.8MB/109.0MB"}]},{"desc":"uploading artifact run-mu4z6m2r-curvesF1ConfidenceB_table","runtime_seconds":1.4865002729999999},{"desc":"uploading artifact run-mu4z6m2r-curvesPrecisionConfidenceB_table","runtime_seconds":1.253473644},{"desc":"uploading artifact run-mu4z6m2r-curvesRecallConfidenceB_table","runtime_seconds":1.027411788}],"total_operations":4}}
+{"time":"2025-01-07T10:19:57.850534953+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-07T10:19:59.079558374+01:00","level":"INFO","msg":"stream: closing","id":"mu4z6m2r"}
+{"time":"2025-01-07T10:19:59.079589227+01:00","level":"INFO","msg":"handler: closed","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:19:59.079603479+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:19:59.079717491+01:00","level":"INFO","msg":"sender: closed","stream_id":"mu4z6m2r"}
+{"time":"2025-01-07T10:19:59.080592241+01:00","level":"INFO","msg":"stream: closed","id":"mu4z6m2r"}

@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:03:09.437639161+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:03:09.437689711+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_200309-wjaelvja/logs/debug-core.log"}
+{"time":"2025-01-06T20:03:09.664191251+01:00","level":"INFO","msg":"created new stream","id":"wjaelvja"}
+{"time":"2025-01-06T20:03:09.664232977+01:00","level":"INFO","msg":"stream: started","id":"wjaelvja"}
+{"time":"2025-01-06T20:03:09.664279802+01:00","level":"INFO","msg":"handler: started","stream_id":"wjaelvja"}
+{"time":"2025-01-06T20:03:09.664311414+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"wjaelvja"}
+{"time":"2025-01-06T20:03:09.664392829+01:00","level":"INFO","msg":"sender: started","stream_id":"wjaelvja"}
+{"time":"2025-01-06T20:03:09.994488741+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:03:39.995267182+01:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: open /proc/4946/statm: no such file or directory"}
+{"time":"2025-01-06T20:03:39.996922463+01:00","level":"ERROR","msg":"monitor: cpu: error sampling metrics: open /proc/4946/stat: no such file or directory\nopen /proc/4946/status: no such file or directory"}
+{"time":"2025-01-06T20:10:25.549025388+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n/wjaelvja/file_stream"}
+{"time":"2025-01-06T20:10:25.549123917+01:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n/wjaelvja/file_stream: {\"error\":\"run cocoa_diseases_yolo11n/wjaelvja not found while streaming file\"}"}
+{"time":"2025-01-06T20:20:40.128183462+01:00","level":"INFO","msg":"stream: closing","id":"wjaelvja"}
+{"time":"2025-01-06T20:20:40.128285125+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:20:40.129785588+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:20:40.315788808+01:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run wjaelvja was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-06T20:20:40.3276552+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-01-06T20:20:40.327773864+01:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"run cocoa_diseases_yolo11n/wjaelvja not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-01-06T20:20:42.570443765+01:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run wjaelvja was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}

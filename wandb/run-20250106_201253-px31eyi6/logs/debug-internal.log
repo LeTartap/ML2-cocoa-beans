@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:12:53.327109349+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:12:53.327159079+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_201253-px31eyi6/logs/debug-core.log"}
+{"time":"2025-01-06T20:12:53.555332818+01:00","level":"INFO","msg":"created new stream","id":"px31eyi6"}
+{"time":"2025-01-06T20:12:53.555418729+01:00","level":"INFO","msg":"stream: started","id":"px31eyi6"}
+{"time":"2025-01-06T20:12:53.55554461+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:12:53.555571889+01:00","level":"INFO","msg":"handler: started","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:12:53.555669366+01:00","level":"INFO","msg":"sender: started","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:12:54.069965737+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:14:48.999777688+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T20:17:59.227067393+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T20:17:59.268845275+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:17:59.270196567+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:18:00.091131215+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:18:00.235910167+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading data","runtime_seconds":0.14459999}],"total_operations":1}}
+{"time":"2025-01-06T20:18:01.369287452+01:00","level":"INFO","msg":"stream: closing","id":"px31eyi6"}
+{"time":"2025-01-06T20:18:01.369343838+01:00","level":"INFO","msg":"handler: closed","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:18:01.369362658+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:18:01.369486099+01:00","level":"INFO","msg":"sender: closed","stream_id":"px31eyi6"}
+{"time":"2025-01-06T20:18:01.373700625+01:00","level":"INFO","msg":"stream: closed","id":"px31eyi6"}

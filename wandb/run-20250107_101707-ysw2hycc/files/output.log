@@ -1,0 +1,42 @@
+Overriding model.yaml nc=80 with nc=3
+Transferred 1009/1015 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/train.cache... 250 images, 0 backgrounds, 0 corrupt: 100%|██████████| 250/250 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/val.cache... 62 images, 0 backgrounds, 0 corrupt: 100%|██████████| 62/62 [00:00<?, ?it/s]
+Plotting labels to cocoa_diseases_yolo11x_dense/train7/labels.jpg...
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 167 weight(decay=0.0), 174 weight(decay=0.0005), 173 bias(decay=0.0)
+[34m[1mTensorBoard: [0mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mcocoa_diseases_yolo11x_dense/train7[0m
+Starting training for 100 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      1/100         3G      1.629      4.069      1.581         24        640:  25%|██▌       | 16/63 [00:07<00:23,  2.00it/s]
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_wgsh0t75140413760891104.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 388, in _do_train
+    self.scaler.scale(self.loss).backward()
+  File "/usr/local/lib/python3.8/dist-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.8/dist-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_wgsh0t75140413760891104.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 388, in _do_train
+    self.scaler.scale(self.loss).backward()
+  File "/usr/local/lib/python3.8/dist-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.8/dist-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,18 @@
+{"time":"2025-01-06T19:57:28.465767476+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T19:57:28.46581945+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_195728-j5izobmi/logs/debug-core.log"}
+{"time":"2025-01-06T19:57:28.693851053+01:00","level":"INFO","msg":"created new stream","id":"j5izobmi"}
+{"time":"2025-01-06T19:57:28.69392315+01:00","level":"INFO","msg":"stream: started","id":"j5izobmi"}
+{"time":"2025-01-06T19:57:28.694006397+01:00","level":"INFO","msg":"handler: started","stream_id":"j5izobmi"}
+{"time":"2025-01-06T19:57:28.694067223+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"j5izobmi"}
+{"time":"2025-01-06T19:57:28.694062346+01:00","level":"INFO","msg":"sender: started","stream_id":"j5izobmi"}
+{"time":"2025-01-06T19:57:28.999159436+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T19:57:59.000596925+01:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: open /proc/2524/statm: no such file or directory"}
+{"time":"2025-01-06T19:57:59.002415759+01:00","level":"ERROR","msg":"monitor: cpu: error sampling metrics: open /proc/2524/stat: no such file or directory\nopen /proc/2524/status: no such file or directory"}
+{"time":"2025-01-06T20:20:40.128093334+01:00","level":"INFO","msg":"stream: closing","id":"j5izobmi"}
+{"time":"2025-01-06T20:20:40.128173437+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:20:40.12968913+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:20:40.785153981+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:20:40.985082503+01:00","level":"INFO","msg":"handler: closed","stream_id":"j5izobmi"}
+{"time":"2025-01-06T20:20:40.985149584+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"j5izobmi"}
+{"time":"2025-01-06T20:20:40.985194118+01:00","level":"INFO","msg":"sender: closed","stream_id":"j5izobmi"}
+{"time":"2025-01-06T20:20:40.986714269+01:00","level":"INFO","msg":"stream: closed","id":"j5izobmi"}

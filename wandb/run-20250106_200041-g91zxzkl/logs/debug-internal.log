@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:00:41.348185643+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:00:41.348236487+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_200041-g91zxzkl/logs/debug-core.log"}
+{"time":"2025-01-06T20:00:41.578040668+01:00","level":"INFO","msg":"created new stream","id":"g91zxzkl"}
+{"time":"2025-01-06T20:00:41.578106607+01:00","level":"INFO","msg":"stream: started","id":"g91zxzkl"}
+{"time":"2025-01-06T20:00:41.578153829+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:00:41.578278603+01:00","level":"INFO","msg":"handler: started","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:00:41.578401602+01:00","level":"INFO","msg":"sender: started","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:00:41.889032481+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:02:29.935627889+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T20:02:29.942137787+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T20:02:29.944600832+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:02:29.945915926+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:02:30.795019512+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:02:30.9469905+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.151787931}],"total_operations":1}}
+{"time":"2025-01-06T20:02:32.123021004+01:00","level":"INFO","msg":"stream: closing","id":"g91zxzkl"}
+{"time":"2025-01-06T20:02:32.1230442+01:00","level":"INFO","msg":"handler: closed","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:02:32.123061098+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:02:32.123080624+01:00","level":"INFO","msg":"sender: closed","stream_id":"g91zxzkl"}
+{"time":"2025-01-06T20:02:32.125376138+01:00","level":"INFO","msg":"stream: closed","id":"g91zxzkl"}

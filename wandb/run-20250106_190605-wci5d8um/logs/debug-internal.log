@@ -1,0 +1,19 @@
+{"time":"2025-01-06T19:06:05.982600627+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T19:06:05.982644535+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_190605-wci5d8um/logs/debug-core.log"}
+{"time":"2025-01-06T19:06:07.435222221+01:00","level":"INFO","msg":"created new stream","id":"wci5d8um"}
+{"time":"2025-01-06T19:06:07.435345466+01:00","level":"INFO","msg":"stream: started","id":"wci5d8um"}
+{"time":"2025-01-06T19:06:07.435799698+01:00","level":"INFO","msg":"handler: started","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:06:07.437000132+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:06:07.437086426+01:00","level":"INFO","msg":"sender: started","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:06:07.791135337+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T19:09:43.470851124+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T19:09:43.512815347+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T19:09:43.512859941+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T19:09:43.513985585+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T19:09:44.483515511+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.046854458,"progress":"459B/459B"},{"desc":"uploading output.log","runtime_seconds":0.046836147,"progress":"11.9KB/11.9KB"}],"total_operations":2}}
+{"time":"2025-01-06T19:09:44.672713494+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T19:09:45.923789848+01:00","level":"INFO","msg":"stream: closing","id":"wci5d8um"}
+{"time":"2025-01-06T19:09:45.923816922+01:00","level":"INFO","msg":"handler: closed","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:09:45.923834337+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:09:45.923854439+01:00","level":"INFO","msg":"sender: closed","stream_id":"wci5d8um"}
+{"time":"2025-01-06T19:09:45.925278032+01:00","level":"INFO","msg":"stream: closed","id":"wci5d8um"}

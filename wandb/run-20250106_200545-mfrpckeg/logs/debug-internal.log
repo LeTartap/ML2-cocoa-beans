@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:05:45.979199894+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:05:45.979249966+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_200545-mfrpckeg/logs/debug-core.log"}
+{"time":"2025-01-06T20:05:46.213796524+01:00","level":"INFO","msg":"created new stream","id":"mfrpckeg"}
+{"time":"2025-01-06T20:05:46.213910219+01:00","level":"INFO","msg":"stream: started","id":"mfrpckeg"}
+{"time":"2025-01-06T20:05:46.214020047+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:05:46.214148497+01:00","level":"INFO","msg":"handler: started","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:05:46.214235849+01:00","level":"INFO","msg":"sender: started","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:05:46.635241756+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:08:31.034406067+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T20:08:33.026723771+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T20:08:33.034674806+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:08:33.036159982+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:08:34.038880956+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-06T20:08:34.440474622+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:08:35.786203322+01:00","level":"INFO","msg":"stream: closing","id":"mfrpckeg"}
+{"time":"2025-01-06T20:08:35.786264239+01:00","level":"INFO","msg":"handler: closed","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:08:35.786287714+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:08:35.786401341+01:00","level":"INFO","msg":"sender: closed","stream_id":"mfrpckeg"}
+{"time":"2025-01-06T20:08:35.790472305+01:00","level":"INFO","msg":"stream: closed","id":"mfrpckeg"}

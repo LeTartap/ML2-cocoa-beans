@@ -1,0 +1,19 @@
+{"time":"2025-01-06T19:53:29.323520739+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T19:53:29.323563501+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_195329-oc8khjtt/logs/debug-core.log"}
+{"time":"2025-01-06T19:53:29.553472331+01:00","level":"INFO","msg":"created new stream","id":"oc8khjtt"}
+{"time":"2025-01-06T19:53:29.553540753+01:00","level":"INFO","msg":"stream: started","id":"oc8khjtt"}
+{"time":"2025-01-06T19:53:29.553699622+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:53:29.553794739+01:00","level":"INFO","msg":"sender: started","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:53:29.553921758+01:00","level":"INFO","msg":"handler: started","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:53:29.884045434+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T19:55:53.983943848+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T19:55:54.024984841+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T19:55:54.025053361+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T19:55:54.02642211+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T19:55:54.793686662+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T19:55:54.995959741+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 103-143","runtime_seconds":0.201828003}],"total_operations":1}}
+{"time":"2025-01-06T19:55:56.094024341+01:00","level":"INFO","msg":"stream: closing","id":"oc8khjtt"}
+{"time":"2025-01-06T19:55:56.094045565+01:00","level":"INFO","msg":"handler: closed","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:55:56.094059711+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:55:56.094084164+01:00","level":"INFO","msg":"sender: closed","stream_id":"oc8khjtt"}
+{"time":"2025-01-06T19:55:56.095422133+01:00","level":"INFO","msg":"stream: closed","id":"oc8khjtt"}

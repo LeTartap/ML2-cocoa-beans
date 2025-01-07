@@ -1,0 +1,18 @@
+{"time":"2025-01-06T20:34:48.783441964+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:34:48.783471041+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_203448-q8mdobz2/logs/debug-core.log"}
+{"time":"2025-01-06T20:34:49.007420064+01:00","level":"INFO","msg":"created new stream","id":"q8mdobz2"}
+{"time":"2025-01-06T20:34:49.00751113+01:00","level":"INFO","msg":"stream: started","id":"q8mdobz2"}
+{"time":"2025-01-06T20:34:49.00769317+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T20:34:49.007791151+01:00","level":"INFO","msg":"sender: started","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T20:34:49.007920623+01:00","level":"INFO","msg":"handler: started","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T20:34:49.304029514+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T21:10:23.65351729+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T21:10:23.654541202+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T21:10:24.655324614+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_q8mdobz2_model","runtime_seconds":1.957455742,"subtasks":[{"desc":"best.pt","runtime_seconds":1.334572756,"progress":"13.6MB/109.1MB"}]},{"desc":"uploading artifact run-q8mdobz2-curvesPrecisionRecallB_table","runtime_seconds":1.691749588},{"desc":"uploading artifact run-q8mdobz2-curvesF1ConfidenceB_table","runtime_seconds":1.473583134},{"desc":"uploading artifact run-q8mdobz2-curvesPrecisionConfidenceB_table","runtime_seconds":1.250250552},{"desc":"uploading artifact run-q8mdobz2-curvesRecallConfidenceB_table","runtime_seconds":1.023198769},{"desc":"uploading output.log","runtime_seconds":0.626879542,"progress":"48.7KB/48.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.626811707,"progress":"8.8KB/8.8KB"}],"total_operations":7}}
+{"time":"2025-01-06T21:10:51.980745742+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-06T21:10:55.221859359+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T21:10:56.621873085+01:00","level":"INFO","msg":"stream: closing","id":"q8mdobz2"}
+{"time":"2025-01-06T21:10:56.621904498+01:00","level":"INFO","msg":"handler: closed","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T21:10:56.621938994+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T21:10:56.62196184+01:00","level":"INFO","msg":"sender: closed","stream_id":"q8mdobz2"}
+{"time":"2025-01-06T21:10:56.623791544+01:00","level":"INFO","msg":"stream: closed","id":"q8mdobz2"}

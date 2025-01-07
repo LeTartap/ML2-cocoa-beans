@@ -1,0 +1,16 @@
+{"time":"2025-01-07T10:17:07.082896745+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T10:17:07.082923227+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250107_101707-ysw2hycc/logs/debug-core.log"}
+{"time":"2025-01-07T10:17:07.311780715+01:00","level":"INFO","msg":"created new stream","id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:07.311820073+01:00","level":"INFO","msg":"stream: started","id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:07.311877794+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:07.311885613+01:00","level":"INFO","msg":"handler: started","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:07.311993686+01:00","level":"INFO","msg":"sender: started","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:07.706692974+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-07T10:17:33.639646011+01:00","level":"INFO","msg":"stream: closing","id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:33.63979306+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-07T10:17:33.641519902+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-07T10:17:34.864752728+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-07T10:17:35.079480213+01:00","level":"INFO","msg":"handler: closed","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:35.079526895+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:35.079577938+01:00","level":"INFO","msg":"sender: closed","stream_id":"ysw2hycc"}
+{"time":"2025-01-07T10:17:35.080769328+01:00","level":"INFO","msg":"stream: closed","id":"ysw2hycc"}

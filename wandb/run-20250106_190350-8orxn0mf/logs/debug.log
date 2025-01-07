@@ -1,0 +1,14 @@
+2025-01-06 19:03:51,471 INFO    MainThread:833 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-01-06 19:03:51,471 INFO    MainThread:833 [wandb_setup.py:_flush():68] Configure stats pid to 833
+2025-01-06 19:03:51,472 INFO    MainThread:833 [wandb_setup.py:_flush():68] Loading settings from /home/jovyan/.config/wandb/settings
+2025-01-06 19:03:51,472 INFO    MainThread:833 [wandb_setup.py:_flush():68] Loading settings from /home/jovyan/ML2/wandb/settings
+2025-01-06 19:03:51,472 INFO    MainThread:833 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-06 19:03:51,472 INFO    MainThread:833 [wandb_init.py:_log_setup():528] Logging user logs to /home/jovyan/ML2/wandb/run-20250106_190350-8orxn0mf/logs/debug.log
+2025-01-06 19:03:51,472 INFO    MainThread:833 [wandb_init.py:_log_setup():529] Logging internal logs to /home/jovyan/ML2/wandb/run-20250106_190350-8orxn0mf/logs/debug-internal.log
+2025-01-06 19:03:51,473 INFO    MainThread:833 [wandb_init.py:init():644] calling init triggers
+2025-01-06 19:03:51,473 INFO    MainThread:833 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2025-01-06 19:03:51,473 INFO    MainThread:833 [wandb_init.py:init():675] wandb.init() called when a run is still active
+2025-01-06 19:03:51,794 INFO    MainThread:833 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-06 19:03:51,794 INFO    MainThread:833 [wandb_init.py:_pause_backend():439] pausing backend
+2025-01-06 19:04:08,033 WARN    MsgRouterThr:833 [router.py:message_loop():75] message_loop has been closed

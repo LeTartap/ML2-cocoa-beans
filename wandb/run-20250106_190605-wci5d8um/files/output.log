@@ -1,0 +1,145 @@
+New https://pypi.org/project/ultralytics/8.3.58 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.3.54 🚀 Python-3.8.10 torch-1.13.1+cu116 CUDA:0 (NVIDIA A16, 15000MiB)
+                                                       CUDA:1 (NVIDIA A16, 15000MiB)
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.
+[34m[1mengine/trainer: [0mtask=detect, mode=train, model=yolo11n.pt, data=datasets/cocoa_diseases/cocoa_dataset.yaml, epochs=5, time=None, patience=100, batch=2, imgsz=640, save=True, save_period=-1, cache=False, device=[0, 1], workers=1, project=cocoa_diseases_yolo11n, name=train5, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=True, opset=None, workspace=None, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, copy_paste_mode=flip, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=cocoa_diseases_yolo11n/train5
+Overriding model.yaml nc=80 with nc=3
+
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 13                  -1  1    111296  ultralytics.nn.modules.block.C3k2            [384, 128, 1, False]
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 16                  -1  1     32096  ultralytics.nn.modules.block.C3k2            [256, 64, 1, False]
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 19                  -1  1     86720  ultralytics.nn.modules.block.C3k2            [192, 128, 1, False]
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 22                  -1  1    378880  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True]
+ 23        [16, 19, 22]  1    431257  ultralytics.nn.modules.head.Detect           [3, [64, 128, 256]]
+YOLO11n summary: 319 layers, 2,590,425 parameters, 2,590,409 gradients, 6.4 GFLOPs
+
+Transferred 448/499 items from pretrained weights
+[34m[1mDDP:[0m debug command /usr/bin/python -m torch.distributed.run --nproc_per_node 2 --master_port 46133 /home/jovyan/.config/Ultralytics/DDP/_temp_wn3m4mx2139836996253920.py
+Ultralytics 8.3.54 🚀 Python-3.8.10 torch-1.13.1+cu116 CUDA:0 (NVIDIA A16, 15000MiB)
+                                                       CUDA:1 (NVIDIA A16, 15000MiB)
+WARNING ⚠️ Upgrade to torch>=2.0.0 for deterministic training.
+[34m[1mTensorBoard: [0mStart with 'tensorboard --logdir cocoa_diseases_yolo11n/train5', view at http://localhost:6006/
+wandb: Currently logged in as: razvan-stanciu98 (razvan-stanciu98-university-of-twente). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.1
+wandb: Run data is saved locally in /home/jovyan/ML2/wandb/run-20250106_190620-sl4ud47a
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train5
+wandb: ⭐️ View project at https://wandb.ai/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n
+wandb: 🚀 View run at https://wandb.ai/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n/runs/sl4ud47a
+Overriding model.yaml nc=80 with nc=3
+Transferred 448/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/train.cache... 250 images, 0 backgrounds, 0 corrupt: 100%|██████████| 250/250 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/val.cache... 62 images, 0 backgrounds, 0 corrupt: 100%|██████████| 62/62 [00:00<?, ?it/s]
+Plotting labels to cocoa_diseases_yolo11n/train5/labels.jpg...
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+[34m[1mTensorBoard: [0mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 2 dataloader workers
+Logging results to [1mcocoa_diseases_yolo11n/train5[0m
+Starting training for 5 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        1/5     0.327G      1.413      3.588      1.332         12        640: 100%|██████████| 125/125 [00:46<00:00,  2.68it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:06<00:00,  4.59it/s]
+                   all         62        289       0.71      0.124      0.163      0.107
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        2/5     0.233G      1.411      3.084      1.248         16        640: 100%|██████████| 125/125 [00:16<00:00,  7.64it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.35it/s]
+                   all         62        289      0.311      0.332      0.271      0.168
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        3/5     0.233G      1.381      2.718      1.257          4        640: 100%|██████████| 125/125 [00:16<00:00,  7.81it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.36it/s]
+                   all         62        289       0.33      0.434      0.292      0.179
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        4/5     0.233G       1.31      2.622      1.218          1        640: 100%|██████████| 125/125 [00:15<00:00,  7.88it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.54it/s]
+                   all         62        289      0.326      0.502      0.318      0.209
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        5/5     0.233G      1.328      2.502      1.225         15        640: 100%|██████████| 125/125 [00:16<00:00,  7.78it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.63it/s]
+                   all         62        289      0.355      0.484      0.329      0.216
+
+5 epochs completed in 0.039 hours.
+Optimizer stripped from cocoa_diseases_yolo11n/train5/weights/last.pt, 5.4MB
+Optimizer stripped from cocoa_diseases_yolo11n/train5/weights/best.pt, 5.4MB
+
+Validating cocoa_diseases_yolo11n/train5/weights/best.pt...
+Ultralytics 8.3.54 🚀 Python-3.8.10 torch-1.13.1+cu116 CUDA:0 (NVIDIA A16, 15000MiB)
+                                                       CUDA:1 (NVIDIA A16, 15000MiB)
+YOLO11n summary (fused): 238 layers, 2,582,737 parameters, 0 gradients, 6.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  8.98it/s]
+                   all         62        289      0.356      0.484      0.329      0.216
+          phytophthora         30         39       0.22       0.41      0.181      0.137
+               monilia         23         30      0.194      0.467      0.229      0.183
+               healthy         52        220      0.654      0.576      0.576      0.329
+Speed: 0.5ms preprocess, 14.5ms inference, 0.0ms loss, 2.1ms postprocess per image
+Results saved to [1mcocoa_diseases_yolo11n/train5[0m
+wandb:
+wandb:
+wandb: Run history:
+wandb:                  lr/pg0 ▃▇█▅▁
+wandb:                  lr/pg1 ▃▇█▅▁
+wandb:                  lr/pg2 ▃▇█▅▁
+wandb:        metrics/mAP50(B) ▁▆▆██
+wandb:     metrics/mAP50-95(B) ▁▅▆██
+wandb:    metrics/precision(B) █▁▁▁▂
+wandb:       metrics/recall(B) ▁▅▇██
+wandb:            model/GFLOPs ▁
+wandb:        model/parameters ▁
+wandb: model/speed_PyTorch(ms) ▁
+wandb:          train/box_loss ██▆▁▂
+wandb:          train/cls_loss █▅▂▂▁
+wandb:          train/dfl_loss █▃▃▁▁
+wandb:            val/box_loss ▃▅█▃▁
+wandb:            val/cls_loss █▄▃▂▁
+wandb:            val/dfl_loss ▃▁█▆▆
+wandb:
+wandb: Run summary:
+wandb:                  lr/pg0 0.00015
+wandb:                  lr/pg1 0.00015
+wandb:                  lr/pg2 0.00015
+wandb:        metrics/mAP50(B) 0.3287
+wandb:     metrics/mAP50-95(B) 0.21627
+wandb:    metrics/precision(B) 0.35587
+wandb:       metrics/recall(B) 0.48415
+wandb:            model/GFLOPs 6.443
+wandb:        model/parameters 2590425
+wandb: model/speed_PyTorch(ms) 13.12
+wandb:          train/box_loss 1.32798
+wandb:          train/cls_loss 2.5023
+wandb:          train/dfl_loss 1.22531
+wandb:            val/box_loss 1.28021
+wandb:            val/cls_loss 2.03806
+wandb:            val/dfl_loss 1.16788
+wandb:
+wandb: 🚀 View run train5 at: https://wandb.ai/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n/runs/sl4ud47a
+wandb: ⭐️ View project at: https://wandb.ai/razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n
+wandb: Synced 5 W&B file(s), 0 media file(s), 10 artifact file(s) and 21 other file(s)
+wandb: Find logs at: ./wandb/run-20250106_190620-sl4ud47a/logs

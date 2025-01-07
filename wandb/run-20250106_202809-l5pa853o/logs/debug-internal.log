@@ -1,0 +1,17 @@
+{"time":"2025-01-06T20:28:09.627581593+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:28:09.627633352+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_202809-l5pa853o/logs/debug-core.log"}
+{"time":"2025-01-06T20:28:09.859848484+01:00","level":"INFO","msg":"created new stream","id":"l5pa853o"}
+{"time":"2025-01-06T20:28:09.859912777+01:00","level":"INFO","msg":"stream: started","id":"l5pa853o"}
+{"time":"2025-01-06T20:28:09.860073863+01:00","level":"INFO","msg":"handler: started","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:28:09.860096364+01:00","level":"INFO","msg":"sender: started","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:28:09.86008054+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:28:10.225245922+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:29:49.657978137+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:29:49.660393231+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:29:50.658897728+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_l5pa853o_model","runtime_seconds":2.041503537,"subtasks":[{"desc":"best.pt","runtime_seconds":1.428376303,"progress":"14.5MB/109.0MB"}]},{"desc":"uploading artifact run-l5pa853o-curvesF1ConfidenceB_table","runtime_seconds":1.511473974},{"desc":"uploading artifact run-l5pa853o-curvesPrecisionConfidenceB_table","runtime_seconds":1.270147364},{"desc":"uploading artifact run-l5pa853o-curvesRecallConfidenceB_table","runtime_seconds":1.027922485}],"total_operations":4}}
+{"time":"2025-01-06T20:29:54.346170054+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:29:55.581494137+01:00","level":"INFO","msg":"stream: closing","id":"l5pa853o"}
+{"time":"2025-01-06T20:29:55.581552028+01:00","level":"INFO","msg":"handler: closed","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:29:55.581572909+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:29:55.581701667+01:00","level":"INFO","msg":"sender: closed","stream_id":"l5pa853o"}
+{"time":"2025-01-06T20:29:55.583834598+01:00","level":"INFO","msg":"stream: closed","id":"l5pa853o"}

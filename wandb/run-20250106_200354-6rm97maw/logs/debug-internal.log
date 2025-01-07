@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:03:54.397694255+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:03:54.397744605+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_200354-6rm97maw/logs/debug-core.log"}
+{"time":"2025-01-06T20:03:54.625988597+01:00","level":"INFO","msg":"created new stream","id":"6rm97maw"}
+{"time":"2025-01-06T20:03:54.626034794+01:00","level":"INFO","msg":"stream: started","id":"6rm97maw"}
+{"time":"2025-01-06T20:03:54.626081662+01:00","level":"INFO","msg":"handler: started","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:03:54.626114214+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:03:54.626188459+01:00","level":"INFO","msg":"sender: started","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:03:54.936374548+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:04:31.474943747+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T20:04:35.312057866+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T20:04:35.317539826+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:04:35.319156939+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:04:36.038714376+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:04:36.293982553+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-06T20:04:37.607374054+01:00","level":"INFO","msg":"stream: closing","id":"6rm97maw"}
+{"time":"2025-01-06T20:04:37.607399455+01:00","level":"INFO","msg":"handler: closed","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:04:37.607419768+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:04:37.607467959+01:00","level":"INFO","msg":"sender: closed","stream_id":"6rm97maw"}
+{"time":"2025-01-06T20:04:37.609978123+01:00","level":"INFO","msg":"stream: closed","id":"6rm97maw"}

@@ -1,0 +1,56 @@
+Overriding model.yaml nc=80 with nc=3
+Transferred 448/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/train.cache... 250 images, 0 backgrounds, 0 corrupt: 100%|██████████| 250/250 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/val.cache... 62 images, 0 backgrounds, 0 corrupt: 100%|██████████| 62/62 [00:00<?, ?it/s]
+Plotting labels to cocoa_diseases_yolo11n/train6/labels.jpg...
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+[34m[1mTensorBoard: [0mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 2 dataloader workers
+Logging results to [1mcocoa_diseases_yolo11n/train6[0m
+Starting training for 5 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        1/5     0.327G      1.411       3.58      1.328         12        640: 100%|██████████| 125/125 [00:17<00:00,  6.98it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.46it/s]
+                   all         62        289      0.609      0.157      0.162      0.106
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        2/5     0.233G      1.411      3.063      1.246         16        640: 100%|██████████| 125/125 [00:15<00:00,  8.19it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.42it/s]
+                   all         62        289      0.304      0.388      0.275      0.171
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        3/5     0.233G      1.403       2.68      1.262          4        640: 100%|██████████| 125/125 [00:15<00:00,  8.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.34it/s]
+                   all         62        289      0.325      0.429      0.281      0.172
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        4/5     0.233G      1.303      2.587       1.21          1        640: 100%|██████████| 125/125 [00:15<00:00,  8.21it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.44it/s]
+                   all         62        289      0.323       0.47      0.304      0.197
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+        5/5     0.233G      1.314      2.525       1.21         15        640: 100%|██████████| 125/125 [00:15<00:00,  8.22it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.33it/s]
+                   all         62        289      0.322      0.517      0.326       0.21
+
+5 epochs completed in 0.028 hours.
+Optimizer stripped from cocoa_diseases_yolo11n/train6/weights/last.pt, 5.4MB
+Optimizer stripped from cocoa_diseases_yolo11n/train6/weights/best.pt, 5.4MB
+
+Validating cocoa_diseases_yolo11n/train6/weights/best.pt...
+Ultralytics 8.3.58 🚀 Python-3.8.10 torch-1.13.1+cu116 CUDA:0 (NVIDIA A16, 15000MiB)
+                                                       CUDA:1 (NVIDIA A16, 15000MiB)
+YOLO11n summary (fused): 238 layers, 2,582,737 parameters, 0 gradients, 6.3 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 31/31 [00:03<00:00,  9.52it/s]
+                   all         62        289      0.321      0.513      0.326       0.21
+          phytophthora         30         39        0.2      0.436      0.174      0.125
+               monilia         23         30       0.18        0.5      0.238      0.186
+               healthy         52        220      0.584      0.605      0.565      0.319
+Speed: 0.6ms preprocess, 7.1ms inference, 0.0ms loss, 2.7ms postprocess per image
+Results saved to [1mcocoa_diseases_yolo11n/train6[0m

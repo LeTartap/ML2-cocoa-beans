@@ -1,0 +1,19 @@
+{"time":"2025-01-06T20:21:23.61935324+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T20:21:23.619400587+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_202123-knsdbtr2/logs/debug-core.log"}
+{"time":"2025-01-06T20:21:23.850357345+01:00","level":"INFO","msg":"created new stream","id":"knsdbtr2"}
+{"time":"2025-01-06T20:21:23.850401191+01:00","level":"INFO","msg":"stream: started","id":"knsdbtr2"}
+{"time":"2025-01-06T20:21:23.850566723+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:21:23.850671283+01:00","level":"INFO","msg":"handler: started","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:21:23.85082265+01:00","level":"INFO","msg":"sender: started","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:21:24.368014989+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T20:23:13.918068467+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-06T20:23:13.926637968+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-06T20:23:13.93101952+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T20:23:13.932688846+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T20:23:14.721365127+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T20:23:14.910772729+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-06T20:23:15.956786437+01:00","level":"INFO","msg":"stream: closing","id":"knsdbtr2"}
+{"time":"2025-01-06T20:23:15.956842853+01:00","level":"INFO","msg":"handler: closed","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:23:15.956860358+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:23:15.956986349+01:00","level":"INFO","msg":"sender: closed","stream_id":"knsdbtr2"}
+{"time":"2025-01-06T20:23:15.958358918+01:00","level":"INFO","msg":"stream: closed","id":"knsdbtr2"}

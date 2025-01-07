@@ -1,0 +1,17 @@
+{"time":"2025-01-06T19:06:20.224108474+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T19:06:20.224163392+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250106_190620-sl4ud47a/logs/debug-core.log"}
+{"time":"2025-01-06T19:06:21.262660573+01:00","level":"INFO","msg":"created new stream","id":"sl4ud47a"}
+{"time":"2025-01-06T19:06:21.262748102+01:00","level":"INFO","msg":"stream: started","id":"sl4ud47a"}
+{"time":"2025-01-06T19:06:21.262839693+01:00","level":"INFO","msg":"sender: started","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:06:21.262850049+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:06:21.262901161+01:00","level":"INFO","msg":"handler: started","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:06:21.786482485+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T19:09:26.992427921+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T19:09:26.994478505+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T19:09:27.993371222+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_sl4ud47a_model","runtime_seconds":2.00810506},{"desc":"uploading artifact run-sl4ud47a-curvesF1ConfidenceB_table","runtime_seconds":1.523146398},{"desc":"uploading artifact run-sl4ud47a-curvesPrecisionConfidenceB_table","runtime_seconds":1.273216587},{"desc":"uploading artifact run-sl4ud47a-curvesRecallConfidenceB_table","runtime_seconds":1.02606404}],"total_operations":4}}
+{"time":"2025-01-06T19:09:28.631750782+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T19:09:29.887128804+01:00","level":"INFO","msg":"stream: closing","id":"sl4ud47a"}
+{"time":"2025-01-06T19:09:29.887256995+01:00","level":"INFO","msg":"handler: closed","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:09:29.887279781+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:09:29.887335916+01:00","level":"INFO","msg":"sender: closed","stream_id":"sl4ud47a"}
+{"time":"2025-01-06T19:09:29.890402158+01:00","level":"INFO","msg":"stream: closed","id":"sl4ud47a"}

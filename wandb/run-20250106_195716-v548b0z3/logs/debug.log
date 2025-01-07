@@ -1,0 +1,38 @@
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_setup.py:_flush():68] Configure stats pid to 166
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_setup.py:_flush():68] Loading settings from /home/jovyan/.config/wandb/settings
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_setup.py:_flush():68] Loading settings from /home/jovyan/ML2/wandb/settings
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-06 19:57:16,626 INFO    MainThread:166 [wandb_init.py:_log_setup():528] Logging user logs to /home/jovyan/ML2/wandb/run-20250106_195716-v548b0z3/logs/debug.log
+2025-01-06 19:57:16,627 INFO    MainThread:166 [wandb_init.py:_log_setup():529] Logging internal logs to /home/jovyan/ML2/wandb/run-20250106_195716-v548b0z3/logs/debug-internal.log
+2025-01-06 19:57:16,627 INFO    MainThread:166 [wandb_init.py:_jupyter_setup():474] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f46f8eb8520>
+2025-01-06 19:57:16,628 INFO    MainThread:166 [wandb_init.py:init():644] calling init triggers
+2025-01-06 19:57:16,628 INFO    MainThread:166 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2025-01-06 19:57:16,628 INFO    MainThread:166 [wandb_init.py:init():680] starting backend
+2025-01-06 19:57:16,629 INFO    MainThread:166 [wandb_init.py:init():684] sending inform_init request
+2025-01-06 19:57:16,631 INFO    MainThread:166 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-06 19:57:16,632 INFO    MainThread:166 [wandb_init.py:init():697] backend started and connected
+2025-01-06 19:57:16,642 INFO    MainThread:166 [wandb_run.py:_label_probe_notebook():1222] probe notebook
+2025-01-06 19:57:16,642 INFO    MainThread:166 [wandb_run.py:_label_probe_notebook():1232] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-01-06 19:57:16,642 INFO    MainThread:166 [wandb_init.py:init():790] updated telemetry
+2025-01-06 19:57:16,724 INFO    MainThread:166 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-01-06 19:57:17,109 INFO    MainThread:166 [wandb_init.py:init():874] starting run threads in backend
+2025-01-06 19:57:17,702 INFO    MainThread:166 [wandb_run.py:_console_start():2374] atexit reg
+2025-01-06 19:57:17,703 INFO    MainThread:166 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2025-01-06 19:57:17,703 INFO    MainThread:166 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2025-01-06 19:57:17,703 INFO    MainThread:166 [wandb_run.py:_redirect():2314] Redirects installed.
+2025-01-06 19:57:17,705 INFO    MainThread:166 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-06 19:57:58,037 INFO    MainThread:166 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-06 19:57:58,037 INFO    MainThread:166 [wandb_init.py:_pause_backend():439] pausing backend
+2025-01-06 19:58:41,349 INFO    MainThread:166 [wandb_init.py:_resume_backend():444] resuming backend
+2025-01-06 19:58:41,352 INFO    MainThread:166 [wandb_run.py:_finish():2100] finishing run razvan-stanciu98-university-of-twente/cocoa_diseases_yolo11n/v548b0z3
+2025-01-06 19:58:41,353 INFO    MainThread:166 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-06 19:58:41,354 INFO    MainThread:166 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-06 19:58:41,354 INFO    MainThread:166 [wandb_init.py:_jupyter_teardown():456] cleaning up jupyter logic
+2025-01-06 19:58:41,354 INFO    MainThread:166 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-01-06 19:58:41,355 INFO    MainThread:166 [wandb_run.py:_restore():2321] restore
+2025-01-06 19:58:41,355 INFO    MainThread:166 [wandb_run.py:_restore():2327] restore done
+2025-01-06 19:58:43,345 INFO    MainThread:166 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-01-06 19:58:43,346 INFO    MainThread:166 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-01-06 19:58:43,458 INFO    MainThread:166 [wandb_run.py:_footer_sync_info():3853] logging synced files
