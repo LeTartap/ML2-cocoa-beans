@@ -1,0 +1,16 @@
+{"time":"2025-01-07T14:56:16.996342217+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T14:56:16.99637421+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250107_145616-jli2cnu8/logs/debug-core.log"}
+{"time":"2025-01-07T14:56:17.450672073+01:00","level":"INFO","msg":"created new stream","id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:17.450731799+01:00","level":"INFO","msg":"stream: started","id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:17.450937871+01:00","level":"INFO","msg":"handler: started","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:17.451490063+01:00","level":"INFO","msg":"sender: started","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:17.45149399+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:17.841922388+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-07T14:56:23.029358114+01:00","level":"INFO","msg":"stream: closing","id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:23.029452234+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-07T14:56:23.033767242+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-07T14:56:23.613349395+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-07T14:56:23.821329578+01:00","level":"INFO","msg":"handler: closed","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:23.821354633+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:23.821372791+01:00","level":"INFO","msg":"sender: closed","stream_id":"jli2cnu8"}
+{"time":"2025-01-07T14:56:23.823391079+01:00","level":"INFO","msg":"stream: closed","id":"jli2cnu8"}

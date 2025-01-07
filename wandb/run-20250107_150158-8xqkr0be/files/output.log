@@ -1,0 +1,52 @@
+Overriding model.yaml nc=80 with nc=3
+Transferred 1009/1015 items from pretrained weights
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_awjvskih139779182651184.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 322, in _do_train
+    self._setup_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 235, in _setup_train
+    self.model = self.model.to(self.device)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 258, in _apply
+    self = super()._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 664, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 987, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 14.65 GiB total capacity; 1.93 MiB already allocated; 1.75 MiB free; 2.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_awjvskih139779182651184.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 322, in _do_train
+    self._setup_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 235, in _setup_train
+    self.model = self.model.to(self.device)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 989, in to
+    return self._apply(convert)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 258, in _apply
+    self = super()._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 641, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 664, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 987, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 14.65 GiB total capacity; 1.93 MiB already allocated; 1.75 MiB free; 2.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

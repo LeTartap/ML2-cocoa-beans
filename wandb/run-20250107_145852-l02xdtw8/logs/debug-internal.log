@@ -1,0 +1,8 @@
+{"time":"2025-01-07T14:58:52.925488661+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T14:58:52.9255208+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250107_145852-l02xdtw8/logs/debug-core.log"}
+{"time":"2025-01-07T14:58:53.147757322+01:00","level":"INFO","msg":"created new stream","id":"l02xdtw8"}
+{"time":"2025-01-07T14:58:53.147801162+01:00","level":"INFO","msg":"stream: started","id":"l02xdtw8"}
+{"time":"2025-01-07T14:58:53.147964086+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"l02xdtw8"}
+{"time":"2025-01-07T14:58:53.148076607+01:00","level":"INFO","msg":"handler: started","stream_id":"l02xdtw8"}
+{"time":"2025-01-07T14:58:53.147965959+01:00","level":"INFO","msg":"sender: started","stream_id":"l02xdtw8"}
+{"time":"2025-01-07T14:58:53.560111641+01:00","level":"INFO","msg":"Starting system monitor"}

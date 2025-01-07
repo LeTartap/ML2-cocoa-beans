@@ -1,0 +1,8 @@
+{"time":"2025-01-07T14:57:38.541960705+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-07T14:57:38.542001962+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250107_145738-hskcbsom/logs/debug-core.log"}
+{"time":"2025-01-07T14:57:38.770464028+01:00","level":"INFO","msg":"created new stream","id":"hskcbsom"}
+{"time":"2025-01-07T14:57:38.77052285+01:00","level":"INFO","msg":"stream: started","id":"hskcbsom"}
+{"time":"2025-01-07T14:57:38.77066596+01:00","level":"INFO","msg":"handler: started","stream_id":"hskcbsom"}
+{"time":"2025-01-07T14:57:38.770709406+01:00","level":"INFO","msg":"sender: started","stream_id":"hskcbsom"}
+{"time":"2025-01-07T14:57:38.770689289+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"hskcbsom"}
+{"time":"2025-01-07T14:57:39.207623328+01:00","level":"INFO","msg":"Starting system monitor"}
