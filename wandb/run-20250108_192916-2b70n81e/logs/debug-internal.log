@@ -1,0 +1,17 @@
+{"time":"2025-01-08T19:29:16.747231251+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-08T19:29:16.747275301+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250108_192916-2b70n81e/logs/debug-core.log"}
+{"time":"2025-01-08T19:29:17.175633814+01:00","level":"INFO","msg":"created new stream","id":"2b70n81e"}
+{"time":"2025-01-08T19:29:17.175695798+01:00","level":"INFO","msg":"stream: started","id":"2b70n81e"}
+{"time":"2025-01-08T19:29:17.175746794+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"2b70n81e"}
+{"time":"2025-01-08T19:29:17.17575169+01:00","level":"INFO","msg":"handler: started","stream_id":"2b70n81e"}
+{"time":"2025-01-08T19:29:17.175870483+01:00","level":"INFO","msg":"sender: started","stream_id":"2b70n81e"}
+{"time":"2025-01-08T19:29:17.572536725+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-08T20:10:37.445958274+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-08T20:10:37.447624799+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-08T20:10:38.446533881+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_2b70n81e_model","runtime_seconds":1.942000675,"subtasks":[{"desc":"best.pt","runtime_seconds":1.276088261,"progress":"10.7MB/109.1MB"}]},{"desc":"uploading artifact run-2b70n81e-curvesF1ConfidenceB_table","runtime_seconds":1.480406523},{"desc":"uploading artifact run-2b70n81e-curvesPrecisionConfidenceB_table","runtime_seconds":1.250708807},{"desc":"uploading artifact run-2b70n81e-curvesRecallConfidenceB_table","runtime_seconds":1.023327364}],"total_operations":4}}
+{"time":"2025-01-08T20:10:41.981630977+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-08T20:10:43.21625884+01:00","level":"INFO","msg":"stream: closing","id":"2b70n81e"}
+{"time":"2025-01-08T20:10:43.216296164+01:00","level":"INFO","msg":"handler: closed","stream_id":"2b70n81e"}
+{"time":"2025-01-08T20:10:43.216312792+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2b70n81e"}
+{"time":"2025-01-08T20:10:43.216444336+01:00","level":"INFO","msg":"sender: closed","stream_id":"2b70n81e"}
+{"time":"2025-01-08T20:10:43.218175132+01:00","level":"INFO","msg":"stream: closed","id":"2b70n81e"}

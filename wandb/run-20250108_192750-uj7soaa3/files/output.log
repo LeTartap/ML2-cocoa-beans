@@ -1,0 +1,126 @@
+Transferred 180/1015 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/train... 250 images, 0 backgrounds, 0 corrupt: 100%|██████████| 250/250 [00:02<00:00, 105.17it/s]
+[34m[1mtrain: [0mNew cache created: /home/jovyan/ML2/datasets/cocoa_diseases/labels/train.cache
+[34m[1mval: [0mScanning /home/jovyan/ML2/datasets/cocoa_diseases/labels/val.cache... 62 images, 0 backgrounds, 0 corrupt: 100%|██████████| 62/62 [00:00<?, ?it/s]
+Plotting labels to cocoa_diseases_yolo11x_dense/train9/labels.jpg...
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 167 weight(decay=0.0), 174 weight(decay=0.0005), 173 bias(decay=0.0)
+[34m[1mTensorBoard: [0mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mcocoa_diseases_yolo11x_dense/train9[0m
+Starting training for 5 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/63 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_m68t4g01139632004777968.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 380, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 111, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 292, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 112, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 130, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 151, in _predict_once
+    x = m(x)  # run
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 238, in forward
+    y.extend(m(y[-1]) for m in self.m)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 238, in <genexpr>
+    y.extend(m(y[-1]) for m in self.m)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 263, in forward
+    return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), 1))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 347, in forward
+    return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/conv.py", line 50, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jovyan/.config/Ultralytics/DDP/_temp_m68t4g01139632004777968.py", line 13, in <module>
+    results = trainer.train()
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/engine/trainer.py", line 380, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 111, in forward
+    return self.loss(x, *args, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 292, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 112, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 130, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/tasks.py", line 151, in _predict_once
+    x = m(x)  # run
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 238, in forward
+    y.extend(m(y[-1]) for m in self.m)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 238, in <genexpr>
+    y.extend(m(y[-1]) for m in self.m)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 263, in forward
+    return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), 1))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/block.py", line 347, in forward
+    return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jovyan/.local/lib/python3.8/site-packages/ultralytics/nn/modules/conv.py", line 50, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

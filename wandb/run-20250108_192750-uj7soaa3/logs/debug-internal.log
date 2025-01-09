@@ -1,0 +1,16 @@
+{"time":"2025-01-08T19:27:50.155722029+01:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-08T19:27:50.155760194+01:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/ML2/wandb/run-20250108_192750-uj7soaa3/logs/debug-core.log"}
+{"time":"2025-01-08T19:27:50.392080697+01:00","level":"INFO","msg":"created new stream","id":"uj7soaa3"}
+{"time":"2025-01-08T19:27:50.392163678+01:00","level":"INFO","msg":"stream: started","id":"uj7soaa3"}
+{"time":"2025-01-08T19:27:50.392335485+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:27:50.39241893+01:00","level":"INFO","msg":"handler: started","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:27:50.392338488+01:00","level":"INFO","msg":"sender: started","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:27:50.908770358+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-08T19:28:11.523569719+01:00","level":"INFO","msg":"stream: closing","id":"uj7soaa3"}
+{"time":"2025-01-08T19:28:11.523683614+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-08T19:28:11.525332712+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-08T19:28:12.138013802+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-08T19:28:12.351642584+01:00","level":"INFO","msg":"handler: closed","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:28:12.351695882+01:00","level":"INFO","msg":"sender: closed","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:28:12.351691178+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uj7soaa3"}
+{"time":"2025-01-08T19:28:12.353892602+01:00","level":"INFO","msg":"stream: closed","id":"uj7soaa3"}
