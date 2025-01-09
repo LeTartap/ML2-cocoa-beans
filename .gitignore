@@ -5,3 +5,4 @@ yolo11_base
 runs
 utils
 models
+datasets/coco8/labels/*.cache
