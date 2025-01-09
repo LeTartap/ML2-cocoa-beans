@@ -31,6 +31,6 @@ Object detection performance metrics: https://jonathan-hui.medium.com/map-mean-a
 Pruning: https://www.datature.io/blog/a-comprehensive-guide-to-neural-network-model-pruning
 Quantization: https://www.datature.io/blog/introducing-post-training-quantization-feature-and-mechanics-explained
 YOLO11 architecture explained in more detail: https://www.youtube.com/watch?v=L9Va7Y9UT8E&ab_channel=Dr.PriyantoHidayatullah
-
+TESTING PERFORMANCE - https://github.com/ultralytics/thop
 
 
