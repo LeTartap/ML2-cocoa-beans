@@ -6,3 +6,4 @@ runs
 utils
 models
 datasets/coco8/labels/*.cache
+datasets/cocoa_diseases/labels/*.cache
