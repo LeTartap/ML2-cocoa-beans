@@ -1,0 +1,92 @@
+{
+    "train_dense": {
+        "mAP50": 0.7306142508125592,
+        "mAP50-95": 0.5057610772786713,
+        "inference_time (ms)": 80.37924766540527
+    },
+    "yolo11x_trained_pruned_local_structured_10_channel": {
+        "mAP50": 0.21275432242646478,
+        "mAP50-95": 0.13513772917815345,
+        "inference_time (ms)": 80.67501744916362
+    },
+    "yolo11x_trained_pruned_local_structured_10_neuron": {
+        "mAP50": 0.36034205356486915,
+        "mAP50-95": 0.23325720047935924,
+        "inference_time (ms)": 85.38435736010152
+    },
+    "yolo11x_trained_pruned_local_structured_15_channel": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "inference_time (ms)": 80.99356774360902
+    },
+    "yolo11x_trained_pruned_local_structured_15_neuron": {
+        "mAP50": 0.25268762626602514,
+        "mAP50-95": 0.16028605252635703,
+        "inference_time (ms)": 89.7511359184019
+    },
+    "yolo11x_trained_pruned_local_structured_20_channel": {
+        "mAP50": 0.0002652731978819757,
+        "mAP50-95": 7.194643696131935e-05,
+        "inference_time (ms)": 80.5484402564264
+    },
+    "yolo11x_trained_pruned_local_structured_20_neuron": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "inference_time (ms)": 87.89748145687965
+    },
+    "yolo11x_trained_pruned_local_structured_30_channel": {
+        "mAP50": 0.0002532247035728563,
+        "mAP50-95": 7.074158753040742e-05,
+        "inference_time (ms)": 83.3255398658014
+    },
+    "yolo11x_trained_pruned_local_structured_30_neuron": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "inference_time (ms)": 88.46028774015365
+    },
+    "yolo11x_trained_pruned_local_structured_40_neuron": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "inference_time (ms)": 217.20183280206496
+    },
+    "yolo11x_trained_pruned_local_structured_50_channel": {
+        "mAP50": 0.0002682373914409979,
+        "mAP50-95": 7.300007785389844e-05,
+        "inference_time (ms)": 97.79342528312438
+    },
+    "yolo11x_trained_pruned_local_structured_50_neuron": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "inference_time (ms)": 88.55719720163653
+    },
+    "yolo11x_trained_pruned_local_unstructured_10": {
+        "mAP50": 0.6234413238383651,
+        "mAP50-95": 0.41297908141633655,
+        "inference_time (ms)": 81.587387669471
+    },
+    "yolo11x_trained_pruned_local_unstructured_15": {
+        "mAP50": 0.6169612749289768,
+        "mAP50-95": 0.4103524238065405,
+        "inference_time (ms)": 95.92402750445952
+    },
+    "yolo11x_trained_pruned_local_unstructured_20": {
+        "mAP50": 0.33122484472283664,
+        "mAP50-95": 0.17160199011446195,
+        "inference_time (ms)": 123.20401207093269
+    },
+    "yolo11x_trained_pruned_local_unstructured_30": {
+        "mAP50": 0.046664770805919,
+        "mAP50-95": 0.01533955079366361,
+        "inference_time (ms)": 87.74746617963237
+    },
+    "yolo11x_trained_pruned_local_unstructured_40": {
+        "mAP50": 0.0075054976418502325,
+        "mAP50-95": 0.002139337574820389,
+        "inference_time (ms)": 88.22469172939178
+    },
+    "yolo11x_trained_pruned_local_unstructured_50": {
+        "mAP50": 0.0011790913732239229,
+        "mAP50-95": 0.0004619505425781217,
+        "inference_time (ms)": 84.6351231298139
+    }
+}
