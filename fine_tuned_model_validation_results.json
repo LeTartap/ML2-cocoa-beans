@@ -2,86 +2,86 @@
     "train_dense": {
         "mAP50": 0.7306142508125592,
         "mAP50-95": 0.5057610772786713,
-        "inference_time (ms)": 81.20246471897248
+        "inference_time (ms)": 108.44059528843049
     },
     "train_pruned_local_structured_10_neuron": {
         "mAP50": 0.6321088667779162,
         "mAP50-95": 0.403297082726227,
-        "inference_time (ms)": 80.3720720352665
+        "inference_time (ms)": 82.66533190204252
     },
     "train_pruned_local_structured_15_neuron": {
         "mAP50": 0.6205770867075385,
         "mAP50-95": 0.4001950822730437,
-        "inference_time (ms)": 90.5838551059846
+        "inference_time (ms)": 156.71103615914623
     },
     "train_pruned_local_structured_20_channel": {
         "mAP50": 0.731691323952263,
         "mAP50-95": 0.4799916590783437,
-        "inference_time (ms)": 83.11280512040662
+        "inference_time (ms)": 267.8254958122007
     },
     "train_pruned_local_structured_20_neuron": {
         "mAP50": 0.3582678738690411,
         "mAP50-95": 0.1879014257989555,
-        "inference_time (ms)": 90.63351538873488
+        "inference_time (ms)": 416.47544983894596
     },
     "train_pruned_local_structured_30_channel": {
         "mAP50": 0.7242670347047397,
         "mAP50-95": 0.5127942105039094,
-        "inference_time (ms)": 83.02905867176672
+        "inference_time (ms)": 126.93306707566785
     },
     "train_pruned_local_structured_30_channel_mask": {
         "mAP50": 0.5677751875795849,
         "mAP50-95": 0.32538936406225755,
-        "inference_time (ms)": 91.33089742352885
+        "inference_time (ms)": 105.06968728957636
     },
     "train_pruned_local_structured_30_neuron": {
         "mAP50": 0.04636070781654968,
         "mAP50-95": 0.0227915562693461,
-        "inference_time (ms)": 84.05717726676696
+        "inference_time (ms)": 94.90949876846807
     },
     "train_pruned_local_structured_40_neuron": {
         "mAP50": 0.006758455774370158,
         "mAP50-95": 0.002655754154977368,
-        "inference_time (ms)": 90.30237505512854
+        "inference_time (ms)": 122.69148518962244
     },
     "train_pruned_local_structured_50_channel": {
         "mAP50": 0.7298369958528044,
         "mAP50-95": 0.48385068893016014,
-        "inference_time (ms)": 82.05137329716835
+        "inference_time (ms)": 109.00124811357068
     },
     "train_pruned_local_structured_50_neuron": {
         "mAP50": 0.0009212944367291724,
         "mAP50-95": 0.0003431756034633296,
-        "inference_time (ms)": 90.00529781464607
+        "inference_time (ms)": 92.82515510436028
     },
     "train_pruned_local_unstructured_10": {
         "mAP50": 0.6290689352643105,
         "mAP50-95": 0.40756150912651207,
-        "inference_time (ms)": 85.0927637469384
+        "inference_time (ms)": 89.83730500744234
     },
     "train_pruned_local_unstructured_15": {
         "mAP50": 0.6133439244574861,
         "mAP50-95": 0.3799456266593401,
-        "inference_time (ms)": 89.6343954147831
+        "inference_time (ms)": 92.33816977470153
     },
     "train_pruned_local_unstructured_20": {
         "mAP50": 0.3583893700127312,
         "mAP50-95": 0.19680341615080504,
-        "inference_time (ms)": 105.61811923980713
+        "inference_time (ms)": 85.10012780466387
     },
     "train_pruned_local_unstructured_30": {
         "mAP50": 0.06890345510859813,
         "mAP50-95": 0.034381262364389674,
-        "inference_time (ms)": 85.01186678486486
+        "inference_time (ms)": 90.93133480318131
     },
     "train_pruned_local_unstructured_40": {
         "mAP50": 0.01894393298964341,
         "mAP50-95": 0.009055272685608613,
-        "inference_time (ms)": 133.76976982239756
+        "inference_time (ms)": 82.4273786237163
     },
     "train_pruned_local_unstructured_50": {
         "mAP50": 0.0007401846036029517,
         "mAP50-95": 0.0002630007431842682,
-        "inference_time (ms)": 230.565813279921
+        "inference_time (ms)": 91.08734899951567
     }
 }
