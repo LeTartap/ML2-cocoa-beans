@@ -4,11 +4,15 @@ This repository contains the research and implementation for the project on dete
 
 ---
 
+![Poster](poster.png)
+
 ## Abstract
 
 This research investigates the application of sparse training techniques to YOLOv11 for detecting diseases in cocoa beans. By reducing computational demands and optimizing performance in high-noise datasets, we aim to demonstrate how structured sparsification can maintain or even enhance prediction accuracy. Benchmarking against dense YOLOv11 models, this study evaluates the trade-offs in accuracy, model size, and computational efficiency.
 
 ---
+
+# [Full Report PDF](./Cocoa_Bean_Sparse_YOLO_Final_Report.pdf)
 
 ## Introduction & Motivation
 
